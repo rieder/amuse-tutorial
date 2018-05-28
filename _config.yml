@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
 title: AMUSE tutorial
 description: Tutorials for the Astrophysical Multipurpose Software Environment
-logo: images/Amuse_logo.png
+logo: /images/Amuse_logo.png
 show_downloads: true
