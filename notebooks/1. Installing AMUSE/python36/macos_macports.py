@@ -6,7 +6,7 @@ In the example below, we use GCC version 7, but other versions will also work.
 
 ```bash
 
-sudo port install python27 py27-virtualenv
+sudo port install python36
 sudo port install gcc7 hdf5 gsl cmake gmp mpfr fftw-3 +gcc7
 """
     if MPI=="openmpi":
@@ -29,9 +29,8 @@ sudo port select --set mpi openmpi-gcc7-fortran"""
 sudo port select --set mpi mpich-gcc7"""
     text += """
 sudo port select --set gcc mp-gcc7
-sudo port select --set python2 python27
+sudo port select --set python3 python36
 
 ```
-
 """
     return text

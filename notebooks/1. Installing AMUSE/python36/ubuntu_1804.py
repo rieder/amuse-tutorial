@@ -3,11 +3,11 @@ def prerequisites(MPI):
 
 ```bash
 
-sudo apt-get install build-essential gfortran python-dev \\
+sudo apt-get install build-essential gfortran python3-dev \\
      libgsl0-dev cmake libfftw3-3 libfftw3-dev \\
      libgmp3-dev libmpfr4 libmpfr-dev \\
      libhdf5-serial-dev hdf5-tools \\
-     python-virtualenv python-setuptools git \\"""
+     python3-virtualenv python3-setuptools git \\"""
     if MPI=="openmpi":
         text += """
      libopenmpi-dev openmpi-bin"""
