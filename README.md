@@ -1,5 +1,9 @@
-# amuse-tutorial
-Tutorial for using AMUSE
+# Amuse tutorial
+Tutorial files for getting to know AMUSE.
+These documents are used for the hands-on sessions of the AMUSE mini-workshop in Kobe (21 and 22 June 2018).
+
+We use [Jupyter](https://jupyter.org) notebooks, please use `pip install jupyter` followed by `jupyter-notebook` in the notebooks directory to read the tutorials.
+
 
 
 # License
