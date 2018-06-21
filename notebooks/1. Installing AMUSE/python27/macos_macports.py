@@ -6,23 +6,15 @@ In the example below, we use GCC version 7, but other versions will also work.
 
 ```bash
 
-sudo port install gcc7
-    
-sudo port install python27
-sudo port install fftw-3 +gcc7
-sudo port install hdf5 gsl cmake gmp mpfr
-sudo port install py27-numpy py27-h5py py27-nose py27-docutils
-sudo port install py27-matplotlib
-sudo port install py27-pandas py27-seaborn
+sudo port install python27 py27-virtualenv
+sudo port install gcc7 hdf5 gsl cmake gmp mpfr fftw-3 +gcc7
 """
     if MPI=="openmpi":
         text += """
-sudo port install openmpi-gcc7
-sudo port install py27-mpi4py +gcc7 +openmpi"""
+sudo port install openmpi-gcc7"""
     elif MPI=="mpich":
         text += """
-sudo port install mpich-gcc7
-sudo port install py27-mpi4py +gcc7 +mpich"""
+sudo port install mpich-gcc7"""
     text +="""
 ```
 
@@ -37,15 +29,9 @@ sudo port select --set mpi openmpi-gcc7-fortran"""
 sudo port select --set mpi mpich-gcc7"""
     text += """
 sudo port select --set gcc mp-gcc7
-sudo port select --set python python27
-sudo port select --set nosetests nosetests27
+sudo port select --set python2 python27
 
 ```
 
-After installing you will need to configure the code with the following line:
-
-```bash
-
-./configure --with-fftw=/opt/local
-```"""
+"""
     return text

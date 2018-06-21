@@ -7,8 +7,7 @@ sudo apt-get install build-essential gfortran python-dev \\
      libgsl0-dev cmake libfftw3-3 libfftw3-dev \\
      libgmp3-dev libmpfr4 libmpfr-dev \\
      libhdf5-serial-dev hdf5-tools \\
-     python-nose python-numpy python-setuptools python-docutils \\
-     python-h5py python-setuptools git \\"""
+     python-virtualenv python-setuptools git \\"""
     if MPI=="openmpi":
         text += """
      libopenmpi-dev openmpi-bin"""
@@ -16,7 +15,5 @@ sudo apt-get install build-essential gfortran python-dev \\
         text += """
      mpich libmpich-dev"""
     
-    text += """
-sudo easy_install mpi4py 
-```"""
+    text += "```"
     return text
